@@ -2,15 +2,28 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --background-screen:#151C28;
+    --detail-color:#2D334E;
 }
 
 html, body{
     height:100vh;
     width:100vw;
+    background: var(--background-screen);
+    color:#fff;
 }
 
-.container{
+main .container{
     width:100%;
+}
+
+main .container > h2 {
+    font-size:2.3rem;
+    margin:1.5rem;
 }
 
 /* Header */
@@ -18,7 +31,12 @@ html, body{
 header{
     display:flex;
     align-items:center;
-    padding:1rem 0;
+    justify-content: space-between;
+    padding:1rem;
+}
+
+header > section > h2{
+    font-size:2rem;
 }
 
 header section.header_actions{
@@ -29,12 +47,21 @@ header section.header_actions{
 }
 
 header a {
+    display:inline-block;
     text-decoration: none;
+    color:#fff;
+    font-size:1.5rem;
+    width:15ch;
 }
 
 /* Main */
 
 /* Banner */
+
+main .container.banner{
+    border-top:.4rem solid var(--detail-color);
+    border-bottom:.4rem solid var(--detail-color);
+}
 
 main .container #image-banner{
     width:100%;
@@ -71,10 +98,6 @@ main .container #image-banner .image-mask #description-banner h2{
 
 /* main resources */
 
-/* main .container.resources{
-    height:40vh;
-} */
-
 main .container.resources input[type="radio"]{
     display:none;
 }
@@ -83,6 +106,7 @@ main .container.resources label{
     display:block;
     padding:1rem;
     text-align:center;
+    font-size:1.3rem;
 }
 
 main .container.resources #game_versions,
@@ -202,6 +226,29 @@ main .container.resources #game_classification #image_game_classification{
 main .container.resources #game_classification #image_game_classification .image-mask{
     display:flex;
     align-items:flex-end;
+    padding:1rem;
+}
+
+/* About Company */
+main .container.company{
+    border-bottom:.4rem solid var(--detail-color);
+}
+
+main .container.company .info{
+    margin: 1.5rem 0 ;
+    padding:1rem;
+    width:100%;
+}
+
+main .container.company .info > h3 {
+    text-align:center;
+    font-size: 1.8rem;
+}
+
+/* platform plan */
+
+main .container.platform_plan > img{
+    width:100%;
 }
 
 @media (max-width:720px){
@@ -210,7 +257,88 @@ main .container.resources #game_classification #image_game_classification .image
         gap:1rem;
     }
 
+    header a {
+        width:100%;
+    }
+
     header section.header_actions{
         flex-direction: column;
+    }
+
+    main .container.company .info{
+        border-bottom:1px solid white;
+    }
+}
+
+@media (min-width:720px){
+    main .container.resources{
+        text-align:center;
+    }
+
+    main .container.resources h2{
+        text-align:left;
+    }
+
+    main .container.resources label{
+        display:inline-block;
+        padding:1rem;
+        text-align:center;
+        font-size:1.5rem;
+        width:15ch;
+    }
+}
+
+@media (min-width:1024px){
+    header > section > h2 {
+        font-size:3rem;
+    }
+
+    main .container #image-banner .image-mask #description-banner h1{
+        font-size:3.5rem;
+    }
+    
+    main .container #image-banner .image-mask #description-banner h2{
+        font-size:2.8rem;
+    }
+    
+    main .container.resources .content_wrapper h2{
+        font-size:3rem;
+        color:#fff;
+    }
+    
+    main .container.resources .content_wrapper p{
+        font-size:1.5rem;
+        color:#fff;
+    }
+
+    main .container.resources #record #image_record .image-mask #percent_record {
+        width:8rem;
+        height:8rem;
+        font-size:1.7rem;
+    }
+
+    main .container.company h2{
+        text-align:center;
+        font-size:3rem;
+    }
+
+    main .container.company h3{
+        font-size:2.5rem !important;
+        margin: 1rem 0;
+    }
+
+    main .container.company p{
+        text-align:center;
+        font-size:1.5rem;
+    }
+
+    main .container.company #info-wrapper{
+        display:flex;
+        justify-content: space-around;
+    }
+
+    main .container.platform_plan h2{
+        font-size:3rem;
+        text-align:center;
     }
 }

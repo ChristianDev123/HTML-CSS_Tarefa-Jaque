@@ -11,20 +11,19 @@
 <body>
     <header>
         <section>
-            P-Media
+            <h2>
+                P-Media
+            </h2>
         </section>
         <section class="container header_actions">
             <div class="nav_btn_wrapper">
-                <a href="#" class="">Home</a>
+                <a href="#main_resources" class="">Principais recursos</a>
             </div>
             <div class="nav_btn_wrapper">
-                <a href="#" class="">Quem somos</a>
+                <a href="#about_us" class="">Quem somos</a>
             </div>
             <div class="nav_btn_wrapper">
-                <a href="#" class="">Principais recursos</a>
-            </div>
-            <div class="nav_btn_wrapper">
-                <a href="#" class="">Roteiro Plataforma de Jogos</a>
+                <a href="#platform_plan" class="">Roteiro Plataforma de Jogos</a>
             </div>
         </section>
     </header>
@@ -39,7 +38,7 @@
                 </div>
             </div>
         </section>
-        <section class="container resources">
+        <section class="container resources" id="main_resources">
                 <input name="btn_action" type="radio" id="btn_game_versions" checked>
                 <label for="btn_game_versions" id="label_btn_game_versions">Versões de Jogos</label>
                 <input name="btn_action" type="radio" id="btn_records">
@@ -48,7 +47,6 @@
                 <label for="btn_users" id="label_btn_users">Perfil de usuário</label>
                 <input name="btn_action" type="radio" id="btn_game_classification">
                 <label for="btn_game_classification" id="label_game_classification">Classificação de Jogos</label>
-                
                 <div class="content_wrapper" id="game_versions">
                     <div id="image_game_version">
                         <div class="image-mask game_version">
@@ -66,7 +64,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="content_wrapper" id="record">
                     <div id="image_record">
                         <div class="image-mask record">
@@ -84,13 +81,12 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="content_wrapper" id="users">
                     <div id="image_users">
                         <div class="image-mask users">
                             <div>
                                 <h2>Perfil de usuário</h2>
-                                <img src="./assets/default_user.png">
+                                <img src="./assets/default_user.png" alt="Imagem de usuário padrão">
                             </div>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis amet dolores in. Laborum saepe illo repellendus sunt suscipit temporibus excepturi quos consectetur molestias illum ut labore accusantium impedit, ea vero!
@@ -98,7 +94,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="content_wrapper" id="game_classification">
                     <div id="image_game_classification">
                         <div class="image-mask game_classification">
@@ -109,22 +104,38 @@
                     </div>
                 </div>
         </section>
-        <section class="container company">
+        <section class="container company" id="about_us">
             <h2>P-Media</h2>
             <div id="info-wrapper">
                 <div class="info">
-                    <h3></h3>
-                    <p></p>
+                    <h3>Sobre a Empresa</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ducimus 
+                        nisi quasi dolores praesentium asperiores reprehenderit aut est cumque necessitatibus 
+                        fugit quod, nihil facere hic id impedit! Eveniet, ipsum dolorum?
+                    </p>
                 </div>
                 <div class="info">
-                    <h3></h3>
-                    <p></p>
+                    <h3>Nossos Valores</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ducimus 
+                        nisi quasi dolores praesentium asperiores reprehenderit aut est cumque necessitatibus 
+                        fugit quod, nihil facere hic id impedit! Eveniet, ipsum dolorum?
+                    </p>
                 </div>
                 <div class="info">
-                    <h3></h3>
-                    <p></p>
+                    <h3>Nosso Propósito</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ducimus 
+                        nisi quasi dolores praesentium asperiores reprehenderit aut est cumque necessitatibus 
+                        fugit quod, nihil facere hic id impedit! Eveniet, ipsum dolorum?
+                    </p>
                 </div>
             </div>
+        </section>
+        <section class="container platform_plan" id="platform_plan">
+            <h2>Plano de funcionamento da plataforma</h2>
+            <img src="./assets/business functioning .png" alt="Plano de Funcionamento de Negocio">
         </section>
     </main>
 </body>
