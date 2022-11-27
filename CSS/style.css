@@ -13,6 +13,27 @@ html, body{
     width:100%;
 }
 
+/* Header */
+
+header{
+    display:flex;
+    align-items:center;
+    padding:1rem 0;
+}
+
+header section.header_actions{
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    gap:1rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/* Main */
+
 /* Banner */
 
 main .container #image-banner{
@@ -22,10 +43,14 @@ main .container #image-banner{
     background-size: cover;
 }
 
-main .container #image-banner .image-mask{
+main .container .image-mask{
     width:100%;
     height:100%;
     background: rgba(0,0,0,0.5);
+    color:#fff;
+}
+
+main .container #image-banner .image-mask{
     display:flex;
     align-items:center;
     padding:2rem;
@@ -33,7 +58,6 @@ main .container #image-banner .image-mask{
 
 main .container #image-banner .image-mask #description-banner h2,
 main .container #image-banner .image-mask #description-banner h1{
-    color:#fff;
     margin:1rem;
 }
 
@@ -43,4 +67,70 @@ main .container #image-banner .image-mask #description-banner h1{
 
 main .container #image-banner .image-mask #description-banner h2{
     font-size:1.5rem;
+}
+
+/* main resources */
+
+main .container.resources{
+    height:40vh;
+}
+
+main .container.resources input[type="checkbox"]{
+    display:none;
+}
+
+main .container.resources label{
+    display:block;
+    padding:1rem;
+    text-align:center;
+}
+
+main .container.resources #game_versions,
+main .container.resources #records,
+main .container.resources #users,
+main .container.resources #game_classification{
+    display:none;
+}
+
+main .container.resources .content_wrapper{
+    padding: 1rem 0;
+}
+
+#btn_game_versions:checked ~ #game_versions,
+#btn_records:checked ~ #records,
+#btn_users:checked ~ #users,
+#btn_game_classification:checked ~ #game_classification{
+    display:block !important;
+}
+
+main .container.resources .content_wrapper#game_versions #image_game_version{
+    background:url('../assets/image_game_version.jpg') no-repeat;
+    background-size:cover;
+    height:30rem;
+}
+
+main .container.resources .content_wrapper#game_versions #image_game_version .image-mask{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    padding:1rem;
+}
+
+main .contaienr.resources .content_wrapper#game_versions #image_game_version h2{
+    font-size:1.5rem;
+    
+}
+main .contaienr.resources .content_wrapper#game_versions #image_game_version p{
+
+}
+
+@media (max-width:720px){
+    header{
+        flex-direction:column;
+        gap:1rem;
+    }
+
+    header section.header_actions{
+        flex-direction: column;
+    }
 }
