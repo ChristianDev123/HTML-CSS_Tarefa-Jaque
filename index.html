@@ -40,14 +40,15 @@
             </div>
         </section>
         <section class="container resources">
-                <input name="btn_actions" type="checkbox" id="btn_game_versions">
+                <input name="btn_action" type="radio" id="btn_game_versions" checked>
                 <label for="btn_game_versions" id="label_btn_game_versions">Versões de Jogos</label>
-                <input name="btn_actions" type="checkbox" id="btn_records">
+                <input name="btn_action" type="radio" id="btn_records">
                 <label for="btn_records" id="label_btn_records">Classificação de Recordes</label>
-                <input name="btn_actions" type="checkbox" id="btn_users">
+                <input name="btn_action" type="radio" id="btn_users">
                 <label for="btn_users" id="label_btn_users">Perfil de usuário</label>
-                <input name="btn_actions" type="checkbox" id="btn_game_classification">
+                <input name="btn_action" type="radio" id="btn_game_classification">
                 <label for="btn_game_classification" id="label_game_classification">Classificação de Jogos</label>
+                
                 <div class="content_wrapper" id="game_versions">
                     <div id="image_game_version">
                         <div class="image-mask game_version">
@@ -65,15 +66,65 @@
                         </div>
                     </div>
                 </div>
-                <div class="content_wrapper" id="records">
-                    records
+
+                <div class="content_wrapper" id="record">
+                    <div id="image_record">
+                        <div class="image-mask record">
+                            <h2>
+                                Classificação de Recordes
+                            </h2>
+                            <div>
+                                <div id="percent_record">
+                                    70%
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis numquam laboriosam tempore, unde qui vero delectus nisi aliquid dolores mollitia maiores soluta tempora ipsa beatae nostrum quae iure, libero eius.
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="content_wrapper" id="users">
-                    users
+                    <div id="image_users">
+                        <div class="image-mask users">
+                            <div>
+                                <h2>Perfil de usuário</h2>
+                                <img src="./assets/default_user.png">
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis amet dolores in. Laborum saepe illo repellendus sunt suscipit temporibus excepturi quos consectetur molestias illum ut labore accusantium impedit, ea vero!
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="content_wrapper" id="game_classification">
-                    game_classification
+                    <div id="image_game_classification">
+                        <div class="image-mask game_classification">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis numquam laboriosam tempore, unde qui vero delectus nisi aliquid dolores mollitia maiores soluta.
+                            </p> 
+                        </div>
+                    </div>
                 </div>
+        </section>
+        <section class="container company">
+            <h2>P-Media</h2>
+            <div id="info-wrapper">
+                <div class="info">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="info">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="info">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
         </section>
     </main>
 </body>

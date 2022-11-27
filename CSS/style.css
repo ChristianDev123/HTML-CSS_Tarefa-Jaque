@@ -71,11 +71,11 @@ main .container #image-banner .image-mask #description-banner h2{
 
 /* main resources */
 
-main .container.resources{
+/* main .container.resources{
     height:40vh;
-}
+} */
 
-main .container.resources input[type="checkbox"]{
+main .container.resources input[type="radio"]{
     display:none;
 }
 
@@ -86,7 +86,7 @@ main .container.resources label{
 }
 
 main .container.resources #game_versions,
-main .container.resources #records,
+main .container.resources #record,
 main .container.resources #users,
 main .container.resources #game_classification{
     display:none;
@@ -97,31 +97,111 @@ main .container.resources .content_wrapper{
 }
 
 #btn_game_versions:checked ~ #game_versions,
-#btn_records:checked ~ #records,
+#btn_records:checked ~ #record,
 #btn_users:checked ~ #users,
 #btn_game_classification:checked ~ #game_classification{
     display:block !important;
 }
 
-main .container.resources .content_wrapper#game_versions #image_game_version{
+main .container.resources .content_wrapper h2{
+    font-size:2rem;
+    color:#fff;
+}
+
+main .container.resources .content_wrapper p{
+    font-size:1rem;
+    color:#fff;
+}
+
+/* game_versions */
+main .container.resources #game_versions #image_game_version{
     background:url('../assets/image_game_version.jpg') no-repeat;
+    background-position: center center;
     background-size:cover;
     height:30rem;
 }
 
-main .container.resources .content_wrapper#game_versions #image_game_version .image-mask{
+main .container.resources #game_versions #image_game_version .image-mask.game_version{
     display:flex;
     flex-direction:column;
+    justify-content: space-around;
     gap:1rem;
+    padding:1.5rem 1rem;
+}
+
+main .container.resources #game_versions #image_game_version .image-mask p {
+    text-align: right;
+}
+
+/* records */
+
+main .container.resources #record #image_record{
+    background:url('../assets/arcade_image.jpg') no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height:30rem;
+}
+
+main .container.resources #record #image_record .image-mask{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
     padding:1rem;
 }
 
-main .contaienr.resources .content_wrapper#game_versions #image_game_version h2{
-    font-size:1.5rem;
-    
+main .container.resources #record #image_record .image-mask > div {
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
 }
-main .contaienr.resources .content_wrapper#game_versions #image_game_version p{
 
+main .container.resources #record #image_record .image-mask #percent_record {
+    background:url('../assets/percent_image.png') no-repeat;
+    background-size: cover;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:5rem;
+    height:5rem;
+    font-size:1.2rem;
+    margin-left:auto;
+    margin-right:1.5rem;
+}
+
+/* Users */
+
+main .container.resources #users #image_users{
+    background:url('../assets/Graphic.png') no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height:30rem;
+}
+
+main .container.resources #users #image_users .image-mask{
+    padding:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .container.resources #users #image_users .image-mask > div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Classification Game*/
+
+main .container.resources #game_classification #image_game_classification{
+    background:url('../assets/classification_game.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height:20rem;
+}
+
+main .container.resources #game_classification #image_game_classification .image-mask{
+    display:flex;
+    align-items:flex-end;
 }
 
 @media (max-width:720px){
